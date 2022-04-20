@@ -1,0 +1,45 @@
+
+.cards {
+    margin-bottom: 140px;
+    &__title {
+        margin-bottom: 81px;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 59px;
+        text-align: center;
+    }
+}
+
+.card {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__title {
+        margin-bottom: 25px;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    &__text {
+        margin-top: 30px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+    }
+}
+
+// Responsiveness =====================
+// mobile
+@media (max-width: 992px) {
+    .cards__title {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 36px;
+    }
+}

@@ -1,0 +1,40 @@
+
+.reverse {
+
+    // &__image {
+    //     width: 625px;
+    //     height: 401px;
+
+    //     img {
+    //         width: 100%;
+    //         height: 100%;
+    //     }
+    // }
+
+    &__title {
+        margin-bottom: 25px;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 64px;
+    }
+
+    &__desc {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    &__list {
+        padding: 24px 51px;
+        background: $color-secondary;
+        list-style: disc;
+    }
+
+    &__item {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
