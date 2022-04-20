@@ -21,7 +21,6 @@
 
   <!-- icons ======================== -->
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-
   <!-- links ======================== -->
   <link rel="stylesheet" href="css/flexboxgrid.min.css">
   <link rel="stylesheet" href="css/main.min.css">
@@ -124,7 +123,73 @@
       </section>
 
       <!-- Products -->
-      <section class="products"></section>
+      <section class="products">
+        <div class="container">
+          <div class="products__wrapper">
+            <h2 class="products__title center-xs">Bizning mahsulotlar</h2>
+            <ul class="products__list"> 
+              <li class="products__item"><span class="products__all">Barchasi</span></li>
+              <li class="products__item"><a class="products__link" href="#">Model A+</a></li>
+              <li class="products__item"><a class="products__link" href="#">Model B+</a></li>
+              <li class="products__item"><a class="products__link" href="#">Model C</a></li>
+              <li class="products__item"><a class="products__link" href="#">Model C+</a></li>
+              <li class="products__item"><a class="products__link" href="#">Model D</a></li>
+              <li class="products__item"><a class="products__link" href="#">Model Yevro</a></li>
+              <li class="products__item"><a class="products__link" href="#">Yangi Tovarlar</a></li>
+              <li class="products__item"><a class="products__link" href="#">Model A</a></li>
+            </ul>
+            <ul class="products__matras-list">
+            </ul>
+            <div class="products__sale">
+                <h1 class="products__sale-title">Aksiyadagi mahsulotlar</h1>
+                <ul class="products__mini-list">
+                  <li class="products__matras-item">
+                    <div class="products__matras-wrapper">
+                    <div class="products__imgs">
+                    <span class="products__matras-signs">Aksiya</span>
+                    <img class="products__matras-img" src='img/mat5.png' alt="img">
+                    </div>
+                      <div class="products__matras-des">
+                        <h2 class="products__matras-title">Ortopedik Eko matras</h2>
+                        <ul class="products__size-list">
+                          <li class="products__size-item"><p class="products__size-text">Yuklama</p><p class="products__size-subtext">150 <span class="products__size-spn">kg</span></p></li>
+                          <li class="products__size-item"><p class="products__size-text">Kafolat</p><p class="products__size-subtext">3 <span class="products__size-spn">yil</span></p></li>
+                          <li class="products__size-item"><p class="products__size-text">O'lchami</p><p class="products__size-subtext">200x120x40</p></li>
+                          <li class="products__size-item "><p class="products__size-text">Sig'imi</p><p class="products__size-subtext">2 <span class="products__size-spn">kishilik</span></p></li>
+                        </ul>
+                        <p class="products__size-texts">Penatibus viverra gravida rhoncus in. At turpis morbi ante tortor a est. Habitant adipiscing ut sed pulvinar tellus, ut urna, fermentum. Porttitor senectus lorem rhoncus facilisi ac dictum varius egestas.</p>
+                        <p class="product__price-text">Narxi</p>
+                        <p class="product__price">1 <span>699</span> <span>999</span> <span class="product__valyuta">so'm</span></p>
+                        <button class="products__btn">Buyurtma<span><i class="bx bx-cart"></i></span></button>
+                      </div>
+                    </div>
+                    </li>
+                    <li class="products__matras-item">
+                      <div class="products__matras-wrapper">
+                      <div class="products__imgs">
+                      <span class="products__matras-signs">Aksiya</span>
+                      <img class="products__matras-img" src='img/mat6.png' alt="img">
+                      </div>
+                        <div class="products__matras-des">
+                          <h2 class="products__matras-title">Ortopedik Eko matras</h2>
+                          <ul class="products__size-list">
+                            <li class="products__size-item"><p class="products__size-text">Yuklama</p><p class="products__size-subtext">150 <span class="products__size-spn">kg</span></p></li>
+                            <li class="products__size-item"><p class="products__size-text">Kafolat</p><p class="products__size-subtext">3 <span class="products__size-spn">yil</span></p></li>
+                            <li class="products__size-item"><p class="products__size-text">O'lchami</p><p class="products__size-subtext">200x120x40</p></li>
+                            <li class="products__size-item "><p class="products__size-text">Sig'imi</p><p class="products__size-subtext">2 <span class="products__size-spn">kishilik</span></p></li>
+                          </ul>
+                          <p class="products__size-texts">Penatibus viverra gravida rhoncus in. At turpis morbi ante tortor a est. Habitant adipiscing ut sed pulvinar tellus, ut urna, fermentum. Porttitor senectus lorem rhoncus facilisi ac dictum varius egestas.</p>
+                          <p class="product__price-text">Narxi</p>
+                          <p class="product__price">1 <span>699</span> <span>999</span> <span class="product__valyuta">so'm</span></p>
+                          <button class="products__btn">Buyurtmaa<span><i class="bx bx-cart"></i></span></button>
+                        </div>
+                      </div>
+                      </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- Discount products -->
       <section class="discounts"></section>
@@ -137,7 +202,6 @@
 
       <!-- Cards -->
       <section class="cards"></section>
-
       <!-- Address -->
       <section class="address"></section>
   </main>
@@ -146,6 +210,10 @@
   <footer class="footer"></footer>
 
   <script src="js/main.js"></script>
+
+  <script src="js/products.js"></script>
+
   <script src="js/statis.js"></script>
+
 </body>
 </html>
