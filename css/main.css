@@ -416,6 +416,250 @@ button {
   margin-right: auto;
 }
 
+p,
+h1,
+h2,
+h3,
+h4 {
+  padding: 0;
+  margin: 0;
+}
+
+.products {
+  border-bottom: 1px solid #ccc;
+}
+
+.products__title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+  color: #01384D;
+  margin-bottom: 77px;
+}
+
+.products__all {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #01384D;
+}
+
+.products__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.products__item:nth-child(1) {
+  margin-right: 15px;
+}
+
+.products__link {
+  display: inline-block;
+  width: 120px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #01384D;
+  opacity: 0.6;
+  text-decoration: none;
+}
+
+.active {
+  font-weight: 400;
+  width: 120px;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  background-color: #E6ECEE;
+  opacity: 0.6;
+}
+
+ul {
+  list-style: none;
+}
+
+.products__matras-item {
+  background-color: #c7dff533;
+  max-width: 1280px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 54px;
+}
+
+.products__matras-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.products__matras-img {
+  width: 464px;
+  height: 213px;
+}
+
+.products__matras-des {
+  margin-left: 100px;
+}
+
+.products__matras-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  color: #01384D;
+}
+
+.products__size-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+  margin-top: 43px;
+}
+
+.products__size-item {
+  margin-left: 45px;
+}
+
+.products__size-item:nth-child(1) {
+  margin-left: 0;
+}
+
+.products__size-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #01384D;
+  opacity: 0.6;
+  margin-bottom: 7px;
+}
+
+.products__size-texts {
+  width: 536px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  color: #01384D;
+  opacity: 0.6;
+  margin-top: 20px;
+}
+
+.products__size-subtext {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  color: #01384D;
+}
+
+.products__size-spn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #01384D;
+}
+
+.products__matras-sign {
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  position: absolute;
+  color: #fff;
+  top: -43px;
+  padding: 10px 45px;
+  background: #FF6B6B;
+  border-radius: 5px;
+}
+
+.product__price-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #01384D;
+  opacity: 0.6;
+  margin-top: 25px;
+}
+
+.product__price {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  color: #01384D;
+}
+
+.product__valyuta {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #01384D;
+}
+
+.products__btn {
+  padding: 9px 45px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #01384D;
+  background: #FFFFFF;
+  border: 2px solid #01384D;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.bx-cart {
+  margin-left: 10px;
+  margin-top: 2px;
+}
+
+.products__sale-title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+  color: #01384D;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.products__matras-signs {
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  position: absolute;
+  color: #fff;
+  top: -43px;
+  padding: 10px 45px;
+  background: #1FCA25;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 992px) {
+  .products__matras-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .products__matras-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
 .hero {
   background: #EABF9F;
 }
