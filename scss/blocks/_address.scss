@@ -1,0 +1,74 @@
+
+.address {
+    margin-top: 130px;
+
+    &__head {
+        display: none;
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        margin-bottom: 40px;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 59px;
+    }
+
+    &__subtitle {
+        margin-bottom: 15px;
+        font-weight: 600;
+        font-size: 29px;
+        line-height: 35px;
+    }
+
+    &__desc {
+        margin-bottom: 36px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+
+
+// Responsiveness =====================
+// mobile
+@media (max-width: 992px) {
+    .address {
+        font-family: $font-secondary;
+        &__head {
+            display: block;
+        }
+
+        &__inner {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        &__title {
+            display: none;
+        }
+
+        &__subtitle {
+            font-size: 18px;
+            line-height: 18px;
+        }
+        
+        &__left {
+            max-width: 530px;
+        }
+
+        &__right {
+            margin-bottom: 25px;
+        }
+    }
+}

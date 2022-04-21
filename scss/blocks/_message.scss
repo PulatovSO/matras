@@ -1,0 +1,70 @@
+.message {
+    padding: 112px 0;
+    margin-top: 90px;
+    background: $color-secondary;
+
+    &__title {
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    &__decs {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+    }
+
+    &__input-block {
+        padding: 0 23px;
+        max-width: 420px;
+        width: 100%;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        background: #fff;
+        border-radius: 5px;
+
+        span {
+            padding-right: 12px;
+            margin-right: 12px;
+            border-right: 2px solid #01374d76;
+        }
+        
+        input {
+            padding: 21px 0;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+            color: inherit;
+            border: none;
+            outline: none;
+
+            &::placeholder {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+    }
+
+    &__btn {
+        margin-left: 15px;
+        padding: 20px 83px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21px;
+        color: #fff;
+        background: $color-primary;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+    }
+
+}
