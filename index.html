@@ -21,6 +21,10 @@
 
   <!-- icons ======================== -->
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- slick ======================== -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
   <!-- links ======================== -->
   <link rel="stylesheet" href="css/flexboxgrid.min.css">
   <link rel="stylesheet" href="css/main.min.css">
@@ -29,26 +33,26 @@
 </head>
 <body class="body">
   <!-- Hero -->
-  <div class="hero">
+  <div class="hero" id="#top">
     <div class="container">
       <!-- Header -->
       <header class="header">
         <nav class="header__nav nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#">katalog</a>
+              <a href="#katalog">katalog</a>
             </li>
             <li class="nav__item">
-              <a href="#">aksiya</a>
+              <a href="#aksiya">aksiya</a>
             </li>
             <li class="nav__item">
-              <a href="#">biz haqimizda</a>
+              <a href="#about">biz haqimizda</a>
             </li>
             <li class="nav__item">
-              <a href="#">manzilimiz</a>
+              <a href="#address">manzilimiz</a>
             </li>
             <li class="nav__item">
-              <a href="#">aloqa</a>
+              <a href="#aloqa">aloqa</a>
             </li>
           </ul>
         </nav>
@@ -74,19 +78,19 @@
             </div>
             <ul class="menu__list">
               <li class="menu__item">
-                <a href="#">katalog</a>
+                <a href="#katalog">katalog</a>
               </li>
               <li class="menu__item">
-                <a href="#">aksiya</a>
+                <a href="#aksiya">aksiya</a>
               </li>
               <li class="menu__item">
-                <a href="#">biz haqimizda</a>
+                <a href="#about">biz haqimizda</a>
               </li>
               <li class="menu__item">
-                <a href="#">manzilimiz</a>
+                <a href="#address">manzilimiz</a>
               </li>
               <li class="menu__item">
-                <a href="#">aloqa</a>
+                <a href="#aloqa">aloqa</a>
               </li>
               <li class="menu__item">
                 <button class="menu__btn button">Buyurtma berish</button>
@@ -108,22 +112,42 @@
             <img src="./images/carousel-img.png" alt="image">
           </div>
         </div>
+        <div class="carousel__page">
+          <div class="carousel__desc">
+            <h2 class="carousel__title">
+              kechalari sokin dam oling
+            </h2>
+            <button class="carousel__btn button">Kategoriyalar</button>
+          </div>
+          <div class="carousel__image">
+            <img src="./images/carousel-img.png" alt="image">
+          </div>
+        </div>
+        <div class="carousel__page">
+          <div class="carousel__desc">
+            <h2 class="carousel__title">
+              kechalari sokin dam oling
+            </h2>
+            <button class="carousel__btn button">Kategoriyalar</button>
+          </div>
+          <div class="carousel__image">
+            <img src="./images/carousel-img.png" alt="image">
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
   <main>
       <!-- Statistics -->
-      <section class="statistics">
+      <section class="statistics" id="katalog">
         <div class="statistics__container container">
-          <ul class="statistics__list row middle-lg middle-md middle-sm"> 
-
-          </ul>
+          <ul class="statistics__list row middle-lg middle-md middle-sm"> </ul>
         </div>
       </section>
 
       <!-- Products -->
-      <!-- <section class="products">
+      <section class="products">
         <div class="container">
           <div class="products__wrapper">
             <h2 class="products__title center-xs">Bizning mahsulotlar</h2>
@@ -189,33 +213,63 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <!-- Discount products -->
       <section class="discounts"></section>
 
       <!-- Technologies -->
-      <section class="videos">
+      <section class="videos" id="aksiya">
         <div class="container videos__inner">
           <h2 class="videos__title">Ishlab chiqish texnologiyalari</h2>
           <ul class="videos__list row">
             <li class="videos__item video col-lg-4 col-md-12">
               <h3 class="video__title">Memoriform</h3>              
-              <img class="video__img" src="./images/card-img1.png" alt="image">
+              <div class="video">
+                <a class="video__link" href="https://youtu.be/MevKTPN4ozw">
+                  <picture>
+                    <source class="video__img" srcset="./images/card-img1.png" alt="image">
+                    <img class="video__img" src="./images/card-img1.png" alt="image">
+                  </picture>
+                </a>
+                <button>
+                  <img class="video__play" src="./images/play.png" alt="play">
+                </button>
+              </div>
               <p class="video__text">
                 Enim urna consequat, justo, cras tincidunt imperdiet orci sodales. Dui purus feugiat morbi quam orci, vel. Elementum tincidunt blandit ultricies venenatis rhoncus.
               </p>
             </li>
             <li class="videos__item video col-lg-4 col-md-12">
               <h3 class="video__title">Tabiiy lateks</h3>              
-              <img class="video__img" src="./images/card-img2.png" alt="image">
+              <div class="video">
+                <a class="video__link" href="https://youtu.be/MevKTPN4ozw">
+                  <picture>
+                    <source class="video__img" srcset="./images/card-img2.png" alt="image">
+                    <img class="video__img" src="./images/card-img2.png" alt="image">
+                  </picture>
+                </a>
+                <button>
+                  <img class="video__play" src="./images/play.png" alt="play">
+                </button>
+              </div>
               <p class="video__text">
                 Enim urna consequat, justo, cras tincidunt imperdiet orci sodales. Dui purus feugiat morbi quam orci, vel. Elementum tincidunt blandit ultricies venenatis rhoncus.
               </p>
             </li>
             <li class="videos__item video col-lg-4 col-md-12">
               <h3 class="video__title">Mustaqil prujina</h3>              
-              <img class="video__img" src="./images/card-img3.png" alt="image">
+              <div class="video">
+                <a class="video__link" href="https://youtu.be/MevKTPN4ozw">
+                  <picture>
+                    <source class="video__img" srcset="./images/card-img3.png" alt="image">
+                    <img class="video__img" src="./images/card-img3.png" alt="image">
+                  </picture>
+                </a>
+                <button>
+                  <img class="video__play" src="./images/play.png" alt="play">
+                </button>
+              </div>
               <p class="video__text">
                 Enim urna consequat, justo, cras tincidunt imperdiet orci sodales. Dui purus feugiat morbi quam orci, vel. Elementum tincidunt blandit ultricies venenatis rhoncus.
               </p>
@@ -225,7 +279,7 @@
       </section>
 
       <!-- Reverse -->
-      <section class="reverse">
+      <section class="reverse" id="about">
         <div class="container reverse__wrapper">
           <div class="reverse__one col-md-12 col-sm-8">
             <div class="reverse__inner">
@@ -297,7 +351,7 @@
       </section>
 
       <!-- Address -->
-      <section class="address">
+      <section class="address" id="address">
         <div class="container">
           <div class="address__inner row flex-sm-row-reverse">
             <div class="address__left col-md-5 col-sm-12">
@@ -315,14 +369,14 @@
       </section>
 
       <!-- Newsletter -->
-      <section class="message">
+      <section class="message" id="aloqa">
         <div class="container">
-          <div class="message__inner row">
-            <div class="message__left col-md-6">
+          <div class="message__inner">
+            <div class="message__left">
               <h2 class="message__title">Sizni qiziqtirdimi?</h2>
               <p class="message__desc">Raqamingizni qoldiring, biz sizga yana qo'ng'iroq qilamiz</p>
             </div>
-            <form class="message__right col-md-6">
+            <form class="message__right">
               <div class="message__input-block">
                 <span>+998</span>
                 <input type="number" placeholder="Raqamingizni yozing">
@@ -330,18 +384,68 @@
               <button class="message__btn">Yuborish</button>
             </form>
           </div>
+          <div class="message__success success">
+            <h2 class="success__title">
+              Arizangiz muvaffaqiyatli <br> qabul qilindi
+            </h2>
+            <p class="success__desc">Siz bilan tez orada bog'lanamiz</p>
+          </div>
         </div>
       </section>
   </main>
 
   <!-- Footer -->
-  <footer class="footer"></footer>
-
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__top row">
+          <ul class="footer__nav-list col-md-6">
+            <li class="footer__nav-link">
+              <a href="#">Biz haqimizda</a>
+            </li>
+            <div class="footer__nav-link">
+              <a href="#">Katalog</a>
+            </div>
+            <div class="footer__nav-link">
+              <a href="#">Aksiya</a>              
+            </div>
+            <div class="footer__nav-link">
+              <a href="#">Manzilimiz</a>
+            </div>
+          </ul>
+          <ul class="footer__links col-md-6">
+            <li class="footer__link">
+              <a href="https://facebook.com"><i class='bx bxl-facebook-square'></i></a>
+            </li>
+            <li class="footer__link">
+              <a href="https://twitter.com"><i class='bx bxl-twitter' ></i></a>
+            </li>
+            <li class="footer__link">
+              <a href="https://vimeo.com"><i class='bx bxl-vimeo' ></i></a>
+            </li>
+            <li class="footer__link">
+              <a href="https://youtube.com"><i class='bx bxl-youtube' ></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__bottom">
+          <span class="footer__cpy">© 2021 Dream Cloud. Barcha huquqlar himoyalangan.</span>
+          <a class="footer__up" href="#top">
+            <img src="./images/arrow-up.svg" alt="up">
+          </a>
+          <img class="footer__corp" src="./images/vizitka.png" alt="abutech">
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/jquery.js"></script>
   <script src="js/main.js"></script>
-
   <script src="js/products.js"></script>
-
   <script src="js/statis.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 </body>
 </html>

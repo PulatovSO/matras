@@ -6,4 +6,24 @@
     background: #fff;
     border: 2px solid $color-primary;
     border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        background: $color-primary;
+        color: #fff;
+    }
+}
+
+
+// video ========================================
+
+.video {
+    position: relative;
+
+    &__play {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
